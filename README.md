@@ -1,2 +1,4 @@
 # ELEN-7040
  Software Engineering Investigation Project
+ 
+Distributed systems partition and replicate functionality and data across multiple nodes to provide increased processing capacity and fault tolerance; however, this introduces challenges of latency and partial failure. Partial failure may cause messages to be lost, arrive out of order, be delivered multiple times, and experience unbounded delays. Message Queueing combined with distributed transactions can provide guaranteed message delivery with strong consistency guarantees, however, distributed transactions incur coordination overhead which increases latency, resulting in a trade-off between consistency and throughput. The impact of latency and short-lived partial failures on the throughput and consistency of a transactional messaging system were evaluated experimentally; finding that strong consistency is achievable, but at the cost of an 80% reduction in message throughput. 
